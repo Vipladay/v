@@ -4,7 +4,7 @@ This modified DIY cartridge provides PHP 5.5.31 and fully free Apache configurat
 
 ## Quick Start
 
-[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=diy-0.1&initial_git_url=https://github.com/ladyga14/openshift-php.git&name=php)
+[![Cài đặt PHP OpenShift](http://launch-shifter.rhcloud.com/launch/Cài đặt PHP.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=diy-0.1&initial_git_url=https://github.com/ladyga14/openshift-php.git&name=php)
 
 1. Open https://openshift.redhat.com/app/console/application_type/cart!diy-0.1 
 2. Fill **Source Code** text field: `https://github.com/ladyga14/openshift-php.git`
