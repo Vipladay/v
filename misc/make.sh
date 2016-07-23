@@ -10,7 +10,7 @@ export ROOT_DIR=${OPENSHIFT_RUNTIME_DIR}	#CARTRIDGE
 export LIB_DIR=${ROOT_DIR}/lib
 export CONF_DIR=${OPENSHIFT_REPO_DIR}/conf
 
-export DIST_PHP_VER=5.6.24
+export DIST_PHP_VER=5.5.38
 
 pushd ${OPENSHIFT_REPO_DIR}/misc
 
