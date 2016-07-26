@@ -1,22 +1,22 @@
 # PHP + Apache 
 
-This modified DIY cartridge provides PHP 5.5.31 and fully free Apache configuration permission, which can be found in `conf` folder.
+Chỉnh sửa Do It Yourself cartridge của Openshift. Cung cấp PHP 5.5+ và cấu hình Apache đầy đủ, có thể xem ở thư mục `conf`.
 
-## Quick Start
+## Cài đặt nhanh
 
-[![Cài đặt PHP OpenShift](http://launch-shifter.rhcloud.com/launch/Cài đặt PHP.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=diy-0.1&initial_git_url=https://github.com/ladyga14/openshift-php.git&name=php)
+[![Cài đặt PHP OpenShift](http://launch-shifter.rhcloud.com/launch/Install PHP.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=diy-0.1&initial_git_url=https://github.com/ladyga14/openshift-php.git&name=php)
 
-1. Open https://openshift.redhat.com/app/console/application_type/cart!diy-0.1 
-2. Fill **Source Code** text field: `https://github.com/ladyga14/openshift-php.git`
-3. Click **Create Application** and wait
-4. Open your website (e.g. foo-bar.rhcloud.com ) and keep your browser running. Meanwhile, you can `git clone` your app to your computer and start coding.
-5. **IMPORTANT** : your first `git push` shall NOT be earlier than the first building ends
+1. Mở https://openshift.redhat.com/app/console/application_type/cart!diy-0.1
+2. Điền vào **Source Code**: `https://github.com/ladyga14/openshift-php.git` và **Branch/Tag** phiên bản php bạn muốn sử dụng. Hiện tại hỗ trợ 3 phiên bản:
+  * php5.5
+  * php5.6
+  * php7
+3. Click **Create Application** và đợi
+4. Mở website của bạn (vd: foo-bar.rhcloud.com ) và giữ cho trình duyệt mở. Trong thời gian đó bạn có thể `git clone` ứng dụng và bắt đầu code.
+5. **IMPORTANT** : Trong khi ứng dụng đang build thì bạn không được `git push` trong thời gian đó.
 
 ### Tips
 
-* The first building lasts for ~20 minutes, the progress can be seen on your app page (eg. https://foo-bar.rhcloud.com )
-* By default, PHP 5.5.31 is choosen, which can be found in `misc/make.sh`
-* Once you modified `conf/httpd.conf`, you must reload your app, or run `${OPENSHIFT_REPO_DIR}/.openshift/action_hooks/reload`, to make it works.
-* If you are using Windows, please follow the Quick Start instruction!!!
-* The OpenShift `diy` cartridge documentation can be found at:
-http://openshift.github.io/documentation/oo_cartridge_guide.html#diy
+* Quá trình cài đặt sẽ diễn ra trong khoảng 20-30 phút.
+* Mặc định nếu bạn không điền branch thì sẽ chọn phiên bản php5.6 để cài đặt
+* Khi chỉnh sửa `conf/httpd.conf`, bạn phải load lại ứng dụng, hoặc chạy `${OPENSHIFT_REPO_DIR}/.openshift/action_hooks/reload` để nó hoạt động.
